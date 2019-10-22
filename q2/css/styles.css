@@ -1,0 +1,641 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+header {
+  background-color: #d24a88;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+h1 {
+  font-family: Quicksand, sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+/*
+p::first-letter {
+  color: white;
+  font-size: 24px;
+}*/
+p {
+  color: white;
+  width: 100%;
+}
+
+.large-font {
+  font-family: Quicksand, sans-serif;
+  color: white;
+  /*color: #FF0099;*/
+  font-size: 640px;
+  font-weight: bold;
+  -webkit-text-stroke: 16px #cc003b;
+}
+
+.red-border-font {
+  font-family: Quicksand, sans-serif;
+  color: white;
+  /*color: #FF0099;*/
+  font-size: 80px;
+  font-weight: bold;
+  -webkit-text-stroke: 4px #cc003b;
+  margin-left: 14px;
+}
+
+.large-font-no-border {
+  font-family: Quicksand, sans-serif;
+  color: white;
+  /*color: #FF0099;*/
+  font-size: 600px;
+  font-weight: bold;
+}
+
+.large-font-no-border-cs {
+  font-family: Quicksand, sans-serif;
+  color: white;
+  /*color: #FF0099;*/
+  font-size: 300px;
+  font-weight: bold;
+}
+
+.floating-back-arrow {
+  /*border-radius: 50%;*/
+  width: 160px;
+  height: 160px;
+  /*border: 8px solid #FFF;*/
+  position: fixed;
+  /*bottom: calc(2%);*/
+  bottom: 10px;
+  left: 60px;
+  /*transform: translateX(-50%);*/
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.large-subheading {
+  font-family: Quicksand, sans-serif;
+  letter-spacing: 0.16em;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  /*text-shadow: 2px 2px 16px #000000;*/
+}
+
+.large-subheading-close-together {
+  font-family: Quicksand, sans-serif;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.medium-subheading {
+  font-family: Quicksand, sans-serif;
+  letter-spacing: 0.16em;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.department-subheading {
+  font-family: Quicksand, sans-serif;
+  letter-spacing: 0.16em;
+  color: #00003b;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.math-font-color {
+  color: #FF0099;
+}
+
+.cs-font-color {
+  color: #FF6700;
+}
+
+.left-column-50 {
+  float: left;
+  width: 61.8%;
+  background: #00003b;
+  height: 50vh;
+  /*background: white;*/
+}
+
+.left-column-50-math {
+  float: left;
+  width: 61.8%;
+  background: #FF0099;
+  height: 50vh;
+  /*background: white;*/
+}
+
+.left-column-10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  height: 50vh;
+  width: 10%;
+}
+
+.right-column-90 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  height: 50vh;
+  width: 90%;
+}
+
+.shadow-bottom {
+  box-shadow: 0 8px 10px -6px black;
+}
+
+.shadow-top {
+  box-shadow: 0 -8px 10px -6px black;
+}
+
+.shadow-left {
+  box-shadow: -8px 0 10px -6px black;
+}
+
+.shadow-right {
+  box-shadow: 8px 0 10px -6px black;
+}
+
+.bottom-border-line {
+  border-bottom: 1px solid white;
+}
+
+.right-column-90 p {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.inner-shadow-bottom {
+  box-shadow: inset 0 8px 10px -6px black;
+}
+
+.inner-shadow-top {
+  box-shadow: inset 0 -8px 10px -6px black;
+}
+
+.inner-shadow-left {
+  box-shadow: inset 8px 0 10px -6px black;
+}
+
+.inner-shadow-right {
+  box-shadow: inset -8px 0 10px -6px black;
+}
+
+.class-detail-vheading {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.left-column {
+  float: left;
+  width: 61.8%;
+  /*background: #00003b;*/
+  height: 100vh;
+  overflow-x: hidden;
+  /*background: white;*/
+}
+
+.color-blue {
+  background: #00003b;
+}
+
+.color-white {
+  background: #FFFFFF;
+}
+
+.left-column-math {
+  width: 61.8%;
+  background: #FF0099;
+  height: 100vh;
+  /*background: white;*/
+}
+
+.left-column img {
+  width: 100%;
+}
+
+.right-column {
+  float: left;
+  width: 38.2%;
+  height: 100vh;
+}
+
+.math-color {
+  background-color: #FF0099;
+}
+
+.math-color-dark-purple {
+  background-color: #9C0063;
+}
+
+.math-color-purple {
+  background-color: #D693BD;
+}
+
+.cs-color {
+  background-color: #FF6700;
+}
+
+.cs-color-blue {
+  background-color: #99CCCC;
+}
+
+.cs-color-grey {
+  background-color: #CCCCCC;
+}
+
+.right-column-50 {
+  float: left;
+  width: 38.2%;
+  background-color: #af85b2;
+  height: 50vh;
+}
+
+.div-row-20 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.div-row-20 p {
+  width: 60%;
+}
+
+.div-row-40 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.div-row-60 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.div-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  color: black;
+  width: 100%;
+}
+
+.div-row-top {
+  /*background-color: #99003b;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.div-row-top-math {
+  background-color: #FF0099;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.div-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-row-bottom {
+  /*background-color: #cc003b;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.div-row-bottom-math {
+  background-color: #FE9900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.right-column img {
+  width: 100%;
+}
+
+.headingBackgroundWhite {
+  background: white;
+  opacity: 0.6;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.department-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 50vh;
+  width: 100%;
+  opacity: 1;
+}
+
+.university-heading {
+  font-family: Quicksand, sans-serif;
+  font-size: 75px;
+  position: absolute;
+}
+
+#web {
+  color: #FF0099;
+  font-weight: bold;
+  z-index: 1;
+  margin: -200px 0 0 0px;
+}
+
+#design {
+  color: #FF0099;
+  font-weight: bold;
+  margin: 0px 0 0 0px;
+  z-index: 2;
+}
+
+#university {
+  color: #FF0099;
+  font-weight: bold;
+  margin: 200px 0 0 0px;
+  z-index: 3;
+}
+
+/* Clear floats after the columns */
+div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #fb9bcb;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Stack columns */
+@media (max-width: 600px) {
+  .left-column, .right-column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 400px) {
+  .left-column, .right-column {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-column, .div-row-top, .div-row-bottom {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+  .department-subheading {
+    letter-spacing: 0.12em;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .left-column, .right-column {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-column, .div-row-top, .div-row-bottom {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+  }
+
+  40% {
+    -webkit-transform: translateX(-36px);
+  }
+
+  60% {
+    -webkit-transform: translateX(-12px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0px);
+  }
+
+  40% {
+    transform: translateX(-36px);
+  }
+
+  60% {
+    transform: translateX(-12px);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+.pulse {
+  animation: shadow-pulse 1.5s 1;
+}
+
+.pulse-big {
+  animation: shadow-pulse-big 1.5s 1;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+.slide-right-to-left {
+  /* for chrome and safari*/
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-name: slidein;
+  /*for firefox*/
+  -moz-animation-duration: 1.0s;
+  -moz-animation-name: slidein;
+  /* for opera*/
+  -o-animation-duration: 1.0s;
+  -o-animation-name: slidein;
+  /* Standard syntax*/
+  animation-duration: 1.0s;
+  animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 300%;
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-o-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.slide-left-to-right {
+  /* for chrome and safari*/
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: slideout;
+  /*for firefox*/
+  -moz-animation-duration: 1s;
+  -moz-animation-name: slideout;
+  /* for opera*/
+  -o-animation-duration: 1s;
+  -o-animation-name: slideout;
+  /* Standard syntax*/
+  animation-duration: 1s;
+  animation-name: slideout;
+}
+
+@-webkit-keyframes slideout {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+
+@-moz-keyframes slideout {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+
+@-o-keyframes slideout {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 300%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-right: -300%;
+    width: 0%;
+  }
+
+  to {
+    margin-right: -300%;
+    width: 100%;
+  }
+}

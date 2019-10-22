@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Web Design University - Computer Science Department</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../js/app.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+
+<!-- <body id="body" class="cs-color slide-right-to-left slide-left-to-right" onload="handlePageOnLoad();"> -->
+<body id="body" class="cs-color">
+  <span id="backArrow" style="display:none" class="floating-back-arrow large-subheading-close-together" onclick="handleOnClickNavigation('../index.html')">&lt;&lt;</span>
+
+  <main>
+    <div id="cs" class="color-white">
+      <div class="left-column cs-color shadow-right" onmouseover="document.getElementById('backArrow').style.display = '';" onclick="handleOnClickNavigation('../index.html')">
+        <div class="div-row-20">
+          <span class="medium-subheading">COMPUTER SCIENCE DEPARTMENT</span>
+        </div>
+
+        <div class="div-row-60">
+          <div class="large-font-no-border">CS</div>
+        </div>
+
+        <div class="div-row-20">
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div style="opacity:0.90" class="div-row-top cs-color bottom-border-line" onmouseover="handleShowHide('calcSubHeader', 'calcHeader');" onclick="handleOnClickNavigation('machinelearning.html')">
+          <div id="calcSubHeader" style="display: none" onmouseout="handleShowHide('calcHeader', 'calcSubHeader');"
+            class="div-row department-overlay">
+            <span class="department-subheading cs-font-color">MACHINE</br>LEARNING ></span>
+          </div>
+
+          <div id="calcHeader" class="div-row">
+            <span class="large-subheading">ML</span>
+          </div>
+        </div>
+
+        <div style="opacity:0.90" class="div-row-bottom cs-color" onmouseover="handleShowHide('statsSubHeader', 'statsHeader');" onclick="handleOnClickNavigation('webdesign.html')">
+          <div id="statsSubHeader" style="display:none" onmouseout="handleShowHide('statsHeader', 'statsSubHeader');"
+          class="div-row department-overlay">
+            <span class="department-subheading cs-font-color">WEB</br>DESIGN ></span>
+          </div>
+
+          <div id="statsHeader" class="div-row">
+            <span class="large-subheading">WD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
